@@ -1,0 +1,38 @@
+.main {
+  padding: 32px;
+}
+
+.title {
+  margin-bottom: 32px;
+  color: rgba(95, 216, 249, 0.867);
+  text-align: center;
+}
+
+.note_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .note_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main {
+    padding: 16px;
+  }
+
+  .note_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .note_list {
+    grid-template-columns: 1fr;
+  }
+}
